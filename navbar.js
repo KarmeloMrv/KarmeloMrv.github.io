@@ -65,10 +65,10 @@ document.addEventListener("DOMContentLoaded", function() {
                               <a class="nav-link" href="Shop.html">Shop</a>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link" href="news.html">News</a>
+                              <a class="nav-link" href="News.html">News</a>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link" href="forum.html">Forums</a>
+                              <a class="nav-link" href="Forum.html">Forums</a>
                           </li>
                           <li class="nav-item">
                               <a class="nav-link" href="Gallery.html">Gallery</a>
