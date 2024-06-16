@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Layout</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="RIS.css">
+
+    <!-- External JavaScript for Navbar and Footer -->
+    <script defer src="navbar.js"></script>
+    <script defer src="footer.js"></script>
+
+    <!-- Leaflet CSS for map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <!-- Leaflet JavaScript for map -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+<body>
+
+    <!-- Navbar Placeholder -->
+    <div id="navbar-placeholder"></div>
+  
+    <div class="container">
+      <div class="locations-container">
+        <h2>Our Locations</h2>
+  
+        <div class="location">
+          <h3>New York Office</h3>
+          <p><i class="fa fa-map-marker"></i> 123 Example St, New York, NY 10001</p>
+          <p><strong>Phone:</strong> +1-123-456-7890</p>
+          <p><strong>Email:</strong> info@yourcompany.com</p>
+        </div>
+  
+        <div class="location">
+          <h3>London Office</h3>
+          <p><i class="fa fa-map-marker"></i> 456 Sample Rd, London SW1A 1AA, UK</p>
+          <p><strong>Phone:</strong> +44-20-1234-5678</p>
+          <p><strong>Email:</strong> london@yourcompany.com</p>
+        </div>
+  
+        <div class="location">
+          <h3>Sydney Office</h3>
+          <p><i class="fa fa-map-marker"></i> 789 Demo Ave, Sydney NSW 2000, Australia</p>
+          <p><strong>Phone:</strong> +61-2-9876-5432</p>
+          <p><strong>Email:</strong> sydney@yourcompany.com</p>
+        </div>
+  
+        <!-- Add more locations as needed -->
+  
+      </div>
+
+      <!-- Map Container -->
+      <div id="map" class="map-container"></div>
+    </div>
+  
+    <footer class="footer justify-content-center">
+      <div id="footer-placeholder"></div>
+    </footer>
+  
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript for Map -->
+    <script>
+        // Initialize and add the map
+        document.addEventListener('DOMContentLoaded', function() {
+            var map = L.map('map').setView([0, 0], 2); // Centered on world map, zoom level 2
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            // Add markers for each location
+            var locations = [
+                { name: 'New York Office', address: '123 Example St, New York, NY 10001', coords: [40.7128, -74.0060] },
+                { name: 'London Office', address: '456 Sample Rd, London SW1A 1AA, UK', coords: [51.5074, -0.1278] },
+                { name: 'Sydney Office', address: '789 Demo Ave, Sydney NSW 2000, Australia', coords: [-33.8688, 151.2093] }
+            ];
+
+            locations.forEach(function(loc) {
+                var marker = L.marker(loc.coords).addTo(map);
+                marker.bindPopup(`<b>${loc.name}</b><br>${loc.address}`).openPopup();
+            });
+        });
+    </script>
+  
+</body>
+</html>

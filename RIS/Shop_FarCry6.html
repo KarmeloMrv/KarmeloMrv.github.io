@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Far Cry 6 - Game Details</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="RIS.css">
+    <script defer src="navbar.js"></script>
+    <script defer src="footer.js"></script>
+</head>
+<body>
+
+<div id="navbar-placeholder"></div>
+
+<section class="container my-5">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="Images/Shop/FarCry6Banner.jpg" class="game-image img-fluid" alt="Far Cry 6">
+        </div>
+        <div class="col-md-6">
+            <h2 class="mb-3">Far Cry 6</h2>
+            <p class="lead">Embark on a revolutionary adventure in the heart of a modern-day guerrilla revolution.</p>
+            <ul>
+                <li><strong>Date of Release:</strong> October 7, 2021</li>
+                <li><strong>Minimum Specifications:</strong>
+                    <ul>
+                        <li>OS: Windows 10 (64-bit versions only)</li>
+                        <li>Processor: Intel Core i5-4440 @ 3.1 GHz | AMD Ryzen 3 1200 @ 3.1 GHz</li>
+                        <li>Memory: 8 GB RAM</li>
+                        <li>Graphics: NVIDIA GeForce GTX 960 | AMD R9 380 (4GB VRAM with Shader Model 5.0 or better)</li>
+                        <li>DirectX: Version 11</li>
+                        <li>Storage: 50 GB available space</li>
+                    </ul>
+                </li>
+                <li><strong>Recommended Specifications:</strong>
+                    <ul>
+                        <li>OS: Windows 10 (64-bit versions only)</li>
+                        <li>Processor: Intel Core i7-6700 @ 3.4 GHz | AMD Ryzen 5 3600X @ 3.8 GHz</li>
+                        <li>Memory: 16 GB RAM</li>
+                        <li>Graphics: NVIDIA GeForce GTX 1080 | AMD RX Vega 64 (8GB VRAM with Shader Model 5.0 or better)</li>
+                        <li>DirectX: Version 12</li>
+                        <li>Storage: 50 GB available space</li>
+                    </ul>
+                </li>
+            </ul>
+            <h4 class="mt-4">Purchase Options:</h4>
+            <div class="form-group">
+                <label for="editionSelect">Select Edition:</label>
+                <select class="form-control" id="editionSelect">
+                    <option value="49.99" data-features="standard">Standard Edition - $49.99</option>
+                    <option value="69.99" data-features="gold">Gold Edition - $69.99</option>
+                    <option value="99.99" data-features="gold">Ultimate Edition - $99.99</option>
+                </select>
+            </div>
+            <button type="button" id="buyNowBtn" class="btn btn-primary mt-3" data-toggle="modal" data-target="#purchaseModal">Buy Now - $49.99</button>
+        </div>
+    </div>
+
+    <!-- Features List -->
+    <div class="row mt-5">
+        <div class="col-12">
+            <h3>Key Features</h3>
+            <ul id="featuresList">
+                <li>Explore the lush and chaotic world of Yara, a tropical paradise frozen in time</li>
+                <li>Lead a guerrilla revolution to overthrow a ruthless dictator</li>
+                <li>Use makeshift weapons, vehicles, and amigos to tear down the regime</li>
+                <li>Experience co-op gameplay for the first time in the Far Cry series</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- User Reviews and Ratings -->
+    <div class="row mt-5">
+        <div class="col-12">
+            <h3>User Reviews</h3>
+            <p><i class="fa fa-star"></i> 4.8/5 based on 300 reviews</p>
+            <p>"An incredible journey filled with action and intrigue!" - User1</p>
+            <p>"Beautifully crafted world and engaging storyline." - User2</p>
+        </div>
+    </div>
+
+    <!-- Related Products -->
+    <div class="row mt-5">
+        <div class="col-12">
+            <h3>Related Products</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="Images/Shop/FarCry5Banner.jpg" class="card-img-top" alt="Far Cry 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Far Cry 5</h5>
+                            <a href="shop_FarCry5.html" class="btn btn-primary">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="Images/Shop/FarCry4Banner.jpg" class="card-img-top" alt="Far Cry 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Far Cry 4</h5>
+                            <a href="shop_FarCry4.html" class="btn btn-primary">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="Images/Shop/FarCry3Banner.jpg" class="card-img-top" alt="Far Cry 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Far Cry 3</h5>
+                            <a href="shop_FarCry3.html" class="btn btn-primary">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Purchase Modal -->
+    <div class="modal fade" id="purchaseModal" tabindex="-1" role="dialog" aria-labelledby="purchaseModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <!-- Step 1: Confirm Purchase -->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="purchaseModalLabel">Purchase Far Cry 6</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="purchaseStep1">
+                    <p>You are about to purchase the <span id="modalEdition">Standard Edition</span> for <span id="modalPrice">$49.99</span>.</p>
+                    <button type="button" class="btn btn-primary" id="proceedToPayment">Proceed to Payment</button>
+                </div>
+                <!-- Step 2: Payment Details -->
+                <div class="modal-body d-none" id="purchaseStep2">
+                    <p>Please enter your payment details:</p>
+                    <form>
+                        <div class="form-group">
+                            <label for="HolderName">Card Holder Name</label>
+                            <input type="text" class="form-control" id="HolderName" placeholder="John Smith">
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="cardNumber">Card Number</label>
+                                <input type="text" class="form-control" id="cardNumber" placeholder="1234 5678 9012 3456">
+                            </div>
+                            <div class="col-sm-3">
+                                <label for="expiryDate">Expiry Date</label>
+                                <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY" maxlength="5">
+                            </div>
+                            <div class="col-sm-3">
+                                <label for="cvv">CVV</label>
+                                <input type="text" class="form-control" id="cvv" placeholder="123" maxlength="3">
+                            </div>
+                        </div>
+                    </form>
+                    <button type="button" class="btn btn-primary" id="confirmPayment">Confirm Payment</button>
+                </div>
+                <!-- Step 3: Purchase Complete -->
+                <div class="modal-body d-none" id="purchaseStep3">
+                    <p>Purchase Complete! Thank you for your purchase.</p>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<footer class="footer justify-content-center">
+    <div id="footer-placeholder"></div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    const features = {
+        standard: [
+            "Explore the lush and chaotic world of Yara, a tropical paradise frozen in time",
+            "Lead a guerrilla revolution to overthrow a ruthless dictator",
+            "Use makeshift weapons, vehicles, and amigos to tear down the regime",
+            "Experience co-op gameplay for the first time in the Far Cry series"
+        ],
+        gold: [
+            "Explore the lush and chaotic world of Yara, a tropical paradise frozen in time",
+            "Lead a guerrilla revolution to overthrow a ruthless dictator",
+            "Use makeshift weapons, vehicles, and amigos to tear down the regime",
+            "Experience co-op gameplay for the first time in the Far Cry series",
+            "Additional DLC content",
+            "Exclusive in-game items",
+            "Bonus missions"
+        ],
+
+        ultimate: [
+            "Explore the lush and chaotic world of Yara, a tropical paradise frozen in time",
+            "Lead a guerrilla revolution to overthrow a ruthless dictator",
+            "Use makeshift weapons, vehicles, and amigos to tear down the regime",
+            "Experience co-op gameplay for the first time in the Far Cry series",
+            "Additional DLC content",
+            "Exclusive in-game items",
+            "Bonus missions",
+            "Early access to new game content",
+            "Exclusive game art and soundtrack",
+            "Behind-the-scenes development insights"
+        ]
+    };
+
+    document.getElementById('editionSelect').addEventListener('change', function() {
+        var selectedPrice = this.value;
+        var selectedFeatures = this.options[this.selectedIndex].getAttribute('data-features');
+        var buyNowBtn = document.getElementById('buyNowBtn');
+        var featuresList = document.getElementById('featuresList');
+
+        buyNowBtn.innerHTML = 'Buy Now - $' + selectedPrice;
+
+        // Clear current features list
+        while (featuresList.firstChild) {
+            featuresList.removeChild(featuresList.firstChild);
+        }
+
+        // Add new features list
+        features[selectedFeatures].forEach(function(feature) {
+            var li = document.createElement('li');
+            li.textContent = feature;
+            featuresList.appendChild(li);
+        });
+
+        document.getElementById('buyNowBtn').addEventListener('click', function() {
+            var editionSelect = document.getElementById('editionSelect');
+            var selectedEdition = editionSelect.options[editionSelect.selectedIndex].getAttribute('data-features');
+            var selectedPrice = editionSelect.value;
+            var modalTitle = document.getElementById('purchaseModalLabel');
+            var modalEdition = document.getElementById('modalEdition');
+            var modalPrice = document.getElementById('modalPrice');
+            var purchaseStep1 = document.getElementById('purchaseStep1');
+            var purchaseStep2 = document.getElementById('purchaseStep2');
+            var purchaseStep3 = document.getElementById('purchaseStep3');
+
+            // Update modal content for selected edition
+            modalTitle.textContent = `Purchase Far Cry 6 - ${selectedEdition.charAt(0).toUpperCase() + selectedEdition.slice(1)} Edition`;
+            modalEdition.textContent = `${selectedEdition.charAt(0).toUpperCase() + selectedEdition.slice(1)} Edition`;
+            modalPrice.textContent = `$${selectedPrice}`;
+
+            // Show modal and reset to step 1
+            $('#purchaseModal').modal('show');
+            purchaseStep1.classList.remove('d-none');
+            purchaseStep2.classList.add('d-none');
+            purchaseStep3.classList.add('d-none');
+        });
+
+        // Handle Proceed to Payment button click
+        document.getElementById('proceedToPayment').addEventListener('click', function() {
+            var purchaseStep1 = document.getElementById('purchaseStep1');
+            var purchaseStep2 = document.getElementById('purchaseStep2');
+
+            purchaseStep1.classList.add('d-none');
+            purchaseStep2.classList.remove('d-none');
+        });
+
+        // Handle Confirm Payment button click
+        document.getElementById('confirmPayment').addEventListener('click', function() {
+            var purchaseStep2 = document.getElementById('purchaseStep2');
+            var purchaseStep3 = document.getElementById('purchaseStep3');
+
+            // Simulate payment process (for demonstration purposes)
+            setTimeout(function() {
+                purchaseStep2.classList.add('d-none');
+                purchaseStep3.classList.remove('d-none');
+            }, 1500); // Delay of 1.5 seconds to simulate payment processing
+
+            // Optionally, you can add further logic here for real payment processing
+        });
+    });
+</script>
+
+</body>
+</html>
+
