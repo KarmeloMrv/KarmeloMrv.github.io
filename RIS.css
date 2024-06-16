@@ -1654,7 +1654,7 @@ body {
 }
 
 .rating-bar .bar .three-star {
-  background-color: #ff3333; /* stronger red */
+  background-color: #ff3333 !important; /* stronger red */
 }
 
 .rating-bar .bar .four-star {
