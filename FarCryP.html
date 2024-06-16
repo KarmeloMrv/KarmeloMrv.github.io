@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Far Cry Primal Showcase</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="RIS.css">
+
+    <script defer src="navbar.js"></script>
+    <script defer src="footer.js"></script>
+</head>
+<body>
+
+    <div id="navbar-placeholder"></div>
+
+    <div class="hero-section" id="FCP">
+        <div style="display: block;">
+            <h1 id="Banner-Title">FAR CRY PRIMAL</h1>
+            <p id="Banner-SubTitle">Welcome to the Far Cry Primal Showcase. Journey to the Stone Age and survive in a world ruled by primitive tribes and deadly predators.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Story Section -->
+        <section id="story">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 text-center">
+                        <h2 class="section-title">Explore Oros</h2>
+                        <p>Far Cry Primal takes you back to Oros, a lush but dangerous world filled with rival tribes, deadly wildlife, and ancient mysteries.</p>
+                    </div>
+                </div>
+                <div class="row justify-content-around mt-5">
+                    <div class="col-md-5">
+                        <div class="story-card">
+                            <h3 class="text-center">Survive and Thrive</h3>
+                            <p>Adapt to the harsh environment as you hunt for food, craft weapons, and build your tribe to secure a future in Oros.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="story-card">
+                            <h3 class="text-center">Confront Rival Tribes</h3>
+                            <p>Battle against rival tribes like the Udam and Izila who threaten your existence and dominance in the prehistoric world.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-around mt-5">
+                    <div class="col-md-5">
+                        <div class="story-card">
+                            <h3 class="text-center">Tame Prehistoric Beasts</h3>
+                            <p>Domesticate and command wild beasts such as sabertooth tigers and mammoths to aid you in combat and exploration.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="story-card">
+                            <h3 class="text-center">Uncover Ancient Mysteries</h3>
+                            <p>Discover the secrets of Oros and its mystical artifacts, unlocking the power to control fire and other supernatural abilities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Characters Section -->
+        <section class="characters-section py-5">
+            <h2 class="section-title">Characters</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="character-card">
+                        <img src="images/takkar.png" alt="Takkar">
+                        <h5>Takkar</h5>
+                        <p>The protagonist, a skilled hunter of the Wenja tribe, on a quest to unite his people and protect them from rival tribes.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="character-card">
+                        <img src="images/udam-leader.png" alt="Udam Leader">
+                        <h5>Ull</h5>
+                        <p>The fearsome leader of the Udam tribe, driven by a primal thirst for conquest and survival at any cost.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="character-card">
+                        <img src="images/izila-leader.png" alt="Izila Leader">
+                        <h5>Batatata</h5>
+                        <p>The cunning and ambitious leader of the Izila tribe, wielding the power of fire and striving to dominate Oros.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="character-card">
+                        <img src="images/sayla.png" alt="Sayla">
+                        <h5>Sayla</h5>
+                        <p>A shaman of the Wenja tribe, gifted with spiritual insight and guiding Takkar on his journey through the primal world.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="character-card">
+                        <img src="images/badari.png" alt="Badari">
+                        <h5>Badari</h5>
+                        <p>A skilled warrior and loyal companion of Takkar, fighting alongside him to protect the Wenja tribe.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Weapons Section -->
+        <section class="weapons-section py-5">
+            <h2 class="section-title">Weapons</h2>
+            <div id="weaponCarouselFCPrimal" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row text-center">
+                            <div class="col-md-4">
+                                <img src="images/spear-primal.jpg" alt="Spear" class="img-fluid rounded-circle">
+                                <h3>Spear</h3>
+                                <p>A versatile melee weapon crafted from stone and bone, essential for hunting and combat in Oros.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="images/bow-primal.jpg" alt="Bow" class="img-fluid rounded-circle">
+                                <h3>Bow</h3>
+                                <p>A ranged weapon used for hunting and warfare, capable of firing arrows with deadly precision.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="images/clubs-primal.jpg" alt="Clubs" class="img-fluid rounded-circle">
+                                <h3>Clubs</h3>
+                                <p>Primitive clubs made from hardened wood and bone, ideal for close-quarters combat against enemies and wildlife.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row text-center">
+                            <div class="col-md-4">
+                                <img src="images/bombs-primal.jpg" alt="Bombs" class="img-fluid rounded-circle">
+                                <h3>Bombs</h3>
+                                <p>Improvised explosives crafted from natural materials, used for tactical advantage and surprising enemies.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="images/bow-primal-fire.jpg" alt="Fire Bow" class="img-fluid rounded-circle">
+                                <h3>Fire Bow</h3>
+                                <p>A specialized bow equipped with fire arrows, capable of igniting enemies and setting fire to structures.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="images/tiger-primal.jpg" alt="Tamed Sabertooth Tiger" class="img-fluid rounded-circle">
+                                <h3>Tamed Sabertooth Tiger</h3>
+                                <p>A fearsome predator tamed by Takkar to assist in battles and intimidate enemies in the wilds of Oros.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#weaponCarouselFCPrimal" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#weaponCarouselFCPrimal" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features-section py-5">
+            <h2 class="section-title">Features</h2>
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <div class="feature-card">
+                        <i class="fas fa-mountain fa-3x feature-icon"></i>
+                        <h5>Primitive Setting</h5>
+                        <p>Immerse yourself in a meticulously recreated prehistoric setting, where survival is paramount and every moment is a fight for existence.</p>
+                    </div>
+                </div>
+            <div class="col-md-3">
+                <div class="feature-card">
+                    <i class="fas fa-landmark fa-3x feature-icon"></i>
+                    <h5>Primal Wildlife</h5>
+                    <p>Encounter a diverse array of prehistoric creatures and predators in the untamed wilderness of Oros.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="feature-card">
+                    <i class="fas fa-users fa-3x feature-icon"></i>
+                    <h5>Tribe Building</h5>
+                    <p>Recruit and expand your tribe, each member bringing unique skills and abilities to aid in your quest for survival and dominance.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="feature-card">
+                    <i class="fas fa-meteor fa-3x feature-icon"></i>
+                    <h5>Primitive Combat</h5>
+                    <p>Master primitive combat techniques, using stealth, traps, and strategic planning to overcome enemies and challenges.</p>
+                </div>
+            </div>
+            </div>
+            </section>
+
+            <section id="map-link-primal" class="py-5 text-center">
+                <h2 class="section-title">Explore the Map</h2>
+                <p>Journey back to the Stone Age in Far Cry Primal and survive the wilds of Oros, a land full of prehistoric predators and rival tribes.</p>
+                <a href="Maps_FCP.html" class="btn btn-primary">View Map</a>
+            </section>
+
+            <!-- Game Trailer Section -->
+            <section id="game-trailer" class="py-5">
+            <div class="container">
+                <h2 class="section-title text-center">Game Trailer</h2>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID_HERE" allowfullscreen></iframe>
+                </div>
+            </div>
+            </section>
+
+                <!-- Shop Link Section -->
+    <section id="shop-link" class="py-5 text-center">
+        <h2 class="section-title">Buy the game</h2>
+        <p>Interested in what you see? Buy the game now here.</p>
+        <a href="Shop_FCND.html" class="btn btn-primary">Buy the game</a>
+    </section>
+
+
+            </div>
+
+            <footer class="footer justify-content-center">
+            <div id="footer-placeholder"></div>
+            </footer>
+
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+

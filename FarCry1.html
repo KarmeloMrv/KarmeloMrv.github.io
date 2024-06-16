@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Far Cry 1 Showcase</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="RIS.css">
+
+    <script defer src="navbar.js"></script>
+    <script defer src="footer.js"></script>
+</head>
+<body>
+
+    <div id="navbar-placeholder"></div>
+
+    <div class="hero-section" id="FC1">
+        <div style="display: block;">
+        <h1 id="Banner-Title">FAR CRY 1</h1>
+        <p id="Banner-SubTitle">Welcome to the Far Cry 1 Showcase. Discover the story, characters, and weapons of this iconic game.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Story Section -->
+        <section id="story">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 text-center">
+                        <h2 class="section-title">Survive the Unknown</h2>
+                        <p>Far Cry takes you to a remote tropical archipelago where you, Jack Carver, find yourself hunted by mercenaries and mutated creatures in a fight for survival.</p>
+                    </div>
+                </div>
+                <div class="row justify-content-around mt-5">
+                    <div class="col-md-5">
+                        <div class="story-card">
+                            <h3 class="text-center">Explore Mysterious Islands</h3>
+                            <p>Navigate through lush forests, ancient ruins, and hidden caves as you uncover the dark secrets of the mysterious islands.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="story-card">
+                            <h3 class="text-center">Battle Mercenaries and Mutants</h3>
+                            <p>Face off against well-equipped mercenaries and mutated creatures, each posing unique challenges and threats to your survival.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-around mt-5">
+                    <div class="col-md-5">
+                        <div class="story-card">
+                            <h3 class="text-center">Discover Ancient Mysteries</h3>
+                            <p>Unravel the mysteries of ancient civilizations and their advanced technology hidden within the islands.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="story-card">
+                            <h3 class="text-center">Escape or Die Trying</h3>
+                            <p>Survive deadly encounters, utilize stealth and strategy, and uncover an escape plan amidst the chaos and danger.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Characters Section -->
+        <section class="characters-section py-5">
+            <h2 class="section-title">Characters</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="character-card">
+                        <img src="Images/Games/Far Cry 1/Jack-carver.jpg" alt="Jack Carver">
+                        <h5>Jack Carver</h5>
+                        <p>The protagonist, a former special forces operative turned boat skipper. Jack finds himself fighting for survival on a remote island.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="character-card">
+                        <img src="Images/Games/Far Cry 1/val-cortez.png" alt="Valerie Constantine">
+                        <h5>Val Cortez</h5>
+                        <p>A CIA agent undercover as a journalist. Val teams up with Jack to uncover the secrets of the island and the mercenaries.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="character-card">
+                        <img src="Images/Games/Far Cry 1/dr-krieger.png" alt="Dr. Krieger">
+                        <h5>Dr. Krieger</h5>
+                        <p>The main antagonist, a mad scientist conducting genetic experiments on the island. Dr. Krieger's actions have dire consequences for everyone involved.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="character-card">
+                        <img src="Images/Games/Far Cry 1/doyle.png" alt="Doyle">
+                        <h5>Doyle</h5>
+                        <p>A mysterious contact who provides Jack with information and assistance throughout his journey.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="character-card">
+                        <img src="Images/Games/Far Cry 1/colonel-crowe.png" alt="Colonel Crowe">
+                        <h5>Colonel Crowe</h5>
+                        <p>Dr. Krieger's right-hand man, a mercenary leader who oversees the security operations on the island. He is a relentless adversary to Jack.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="weapons-section py-5">
+            <h2 class="section-title">Weapons</h2>
+            <div id="weaponCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row text-center">
+                            <div class="col-md-4">
+                                <img src="Images/Games/Far Cry 1/machete.jpg" alt="Machete" class="img-fluid rounded-circle">
+                                <h3>Machete</h3>
+                                <p>A versatile melee weapon used for close combat and clearing foliage.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="Images/Games/Far Cry 1/assault-rifle.jpg" alt="Assault Rifle" class="img-fluid rounded-circle">
+                                <h3>M4</h3>
+                                <p>A standard-issue rifle used by mercenaries. It offers a good balance of firepower and accuracy.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="Images/Games/Far Cry 1/sniper-rifle.jpg" alt="Sniper Rifle" class="img-fluid rounded-circle">
+                                <h3>Sniper Rifle</h3>
+                                <p>A long-range weapon perfect for taking out enemies from a distance with precision.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row text-center">
+                            <div class="col-md-4">
+                                <img src="Images/Games/Far Cry 1/shotgun.jpg" alt="Shotgun" class="img-fluid rounded-circle">
+                                <h3>Jackhammer</h3>
+                                <p>A powerful close-quarters weapon, ideal for taking down enemies at short range.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="Images/Games/Far Cry 1/grenade-launcher.jpg" alt="Grenade Launcher" class="img-fluid rounded-circle">
+                                <h3>Rocket Launcher</h3>
+                                <p>A high-explosive weapon for dealing with groups of enemies.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="Images/Games/Far Cry 1/pistol.png" alt="Pistol" class="img-fluid rounded-circle">
+                                <h3>Desert Eagle</h3>
+                                <p>A reliable sidearm for quick and precise encounters.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#weaponCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#weaponCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features-section py-5">
+            <h2 class="section-title">Features</h2>
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <div class="feature-card">
+                        <i class="fa fa-globe fa-3x feature-icon"></i>
+                        <h5>Vast Open World</h5>
+                        <p>Explore a vast open world filled with dense jungles, open beaches, and hidden caves.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-card">
+                        <i class="fa fa-crosshairs fa-3x feature-icon"></i>
+                        <h5>Tactical Combat</h5>
+                        <p>Engage in tactical combat with a variety of weapons and vehicles at your disposal.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-card">
+                        <i class="fa fa-brain fa-3x feature-icon"></i>
+                        <h5>Realistic AI</h5>
+                        <p>Experience realistic AI that adapts to your tactics and strategies.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-card">
+                        <i class="fa fa-book fa-3x feature-icon"></i>
+                        <h5>Immersive Story</h5>
+                        <p>Discover the dark secrets of the archipelago through immersive storytelling.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="map-link-fc1" class="py-5 text-center">
+            <h2 class="section-title">Explore the Map</h2>
+            <p>Step into the lush and hostile tropics of Far Cry's first adventure, battling mercenaries and wildlife in a struggle to survive.</p>
+            <a href="Maps_FC1.html" class="btn btn-primary">View Map</a>
+        </section>
+
+        <section id="game-trailer" class="py-5">
+            <div class="container">
+                <h2 class="section-title text-center">Game Trailer</h2>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/your-video-url" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+            <!-- Shop Link Section -->
+    <section id="shop-link" class="py-5 text-center">
+        <h2 class="section-title">Buy the game</h2>
+        <p>Interested in what you see? Buy the game now here.</p>
+        <a href="Shop_FarCry1.html" class="btn btn-primary">Buy the game</a>
+    </section>
+
+
+    </div>
+
+    <footer class="footer justify-content-center">
+      <div id="footer-placeholder"></div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

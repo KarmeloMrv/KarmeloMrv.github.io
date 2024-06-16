@@ -1,0 +1,29 @@
+{
+    "events": [
+      {
+        "start_date": {
+          "year": "2000"
+        },
+        "headline": "Ubisoft Founding",
+        "text": "<p>Ubisoft was founded in Carentoir, France by the Guillemot brothers.</p>",
+        "asset": {
+          "media": "https://via.placeholder.com/400x300",
+          "credit": "Image Credit: Ubisoft",
+          "caption": "Ubisoft Founding"
+        }
+      },
+      {
+        "start_date": {
+          "year": "2003"
+        },
+        "headline": "Launch of Far Cry",
+        "text": "<p>Far Cry, an open-world first-person shooter, was released, revolutionizing the gaming industry.</p>",
+        "asset": {
+          "media": "https://via.placeholder.com/400x300",
+          "credit": "Image Credit: Ubisoft",
+          "caption": "Far Cry Launch"
+        }
+      }
+    ]
+  }
+  
