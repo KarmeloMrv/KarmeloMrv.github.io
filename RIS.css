@@ -1407,7 +1407,7 @@ body {
         text-transform: uppercase;
     }
     
-    .character-card, .weapon-card, .feature-card .card {
+    .character-card, .weapon-card, .feature-card, .card {
       margin: 20px;
       padding: 20px;
       border: 1px solid #ddd;
