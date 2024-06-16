@@ -79,6 +79,10 @@ document.addEventListener("DOMContentLoaded", function() {
               
     <a href="#top" class="to-top-btn">Top</a>
 
+    html {
+  scroll-behavior: smooth;
+}
+
   `;
 
   document.getElementById("navbar-placeholder").innerHTML = navbarHTML;
