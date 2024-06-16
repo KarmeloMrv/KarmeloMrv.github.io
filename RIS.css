@@ -1380,7 +1380,7 @@ body {
     }
 
     #FC6{
-      background: url('Images/arousel/FarCry6.jpg') no-repeat center center;      
+      background: url('Images/Carousel/FarCry6.jpg') no-repeat center center;      
     }
 
     #FCBD{
@@ -1407,7 +1407,7 @@ body {
         text-transform: uppercase;
     }
     
-    .character-card, .weapon-card, .feature-card .card {
+    .character-card, .weapon-card, .feature-card{
       margin: 20px;
       padding: 20px;
       border: 1px solid #ddd;
@@ -1422,10 +1422,14 @@ body {
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
   
-  .character-card img, .weapon-card img, .feature-card img, .card img{
+  .character-card img, .weapon-card img .card img{
       width: 100%;
       height: auto;
       border-radius: 8px;
+  }
+  
+  .character-card img{
+    max-height: 300px;
   }
   
   .character-card h5, .weapon-card h5, .feature-card h5 {
