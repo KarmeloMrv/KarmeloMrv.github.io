@@ -1646,20 +1646,25 @@ body {
   border-radius: 4px;
 }
 .rating-bar .bar .one-star {
-  background-color: #dc3545;
+  background-color: #ff9999; /* light red */
 }
+
 .rating-bar .bar .two-star {
-  background-color: lighten(#dc3545, 20%); /* Lighter shade */
+  background-color: #ff6666; /* medium red */
 }
+
 .rating-bar .bar .three-star {
-  background-color: lighten(#dc3545, 40%); /* Even lighter shade */
+  background-color: #ff3333; /* stronger red */
 }
+
 .rating-bar .bar .four-star {
-  background-color: desaturate(#dc3545, 50%); /* Less saturated, more pink */
+  background-color: #ff0000; /* pure red */
 }
+
 .rating-bar .bar .five-star {
-  background-color: desaturate(#dc3545, 70%); /* Even less saturated, light pink */
+  background-color: #cc0000; /* darker red */
 }
+
 
 .rating-bar .percentage {
   flex: 1;
