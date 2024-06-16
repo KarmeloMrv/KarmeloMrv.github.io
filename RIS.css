@@ -1413,7 +1413,7 @@ body {
       border: 1px solid #ddd;
       border-radius: 8px;
       text-align: center;
-      background-color: white;
+      background-color: white !important;
       transition: transform 0.3s, box-shadow 0.3s;
   }
   
