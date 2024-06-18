@@ -388,6 +388,18 @@ body {
     }
 }
 
+  .event-image-container {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .event-image {
+    height: auto;
+    max-width: 100%;
+  }
+
+
   .min-height-maps {
     min-height: 1000px;
   }
