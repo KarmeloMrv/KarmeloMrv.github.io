@@ -498,6 +498,10 @@ body {
   margin-bottom: 20px;
   width: auto;
 }
+
+.about-us-header{
+  font-size:28px !important;
+}
 }
 .event-image-container {
   width: 100%;
