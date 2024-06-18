@@ -386,6 +386,24 @@ body {
     .community-item {
         flex: 1 1 100%;
     }
+
+    .main-article, .featured-game, .event, .community-item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .main-article img,
+    .featured-game img,
+    .event img,
+    .community-item img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .carousel-caption h3, .carousel-caption p {
+      font-size: 1.2rem;
+    }
 }
 
   .event-image-container {
