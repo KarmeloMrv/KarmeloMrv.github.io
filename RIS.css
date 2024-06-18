@@ -491,6 +491,13 @@ body {
   margin-right: 0; /* Remove right margin on smaller screens */
   margin-bottom: 10px; /* Space below input */
 }
+
+.contact-info,
+.social-links {
+  position: static;
+  margin-bottom: 20px;
+  width: auto;
+}
 }
 .event-image-container {
   width: 100%;
@@ -1192,15 +1199,6 @@ button:checked {
 
 .social-links a:hover {
   color: #4b0000; /* Red color for hover */
-}
-
-@media (max-width: 991.98px) {
-  .contact-info,
-  .social-links {
-    position: static;
-    margin-bottom: 20px;
-    width: auto;
-  }
 }
 
 .ticket-form {
