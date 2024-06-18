@@ -1106,7 +1106,7 @@ button:checked {
 }
 
 .contact-container {
-  max-width: 600px;
+  max-width: 900px;
   margin: auto;
   padding: 20px;
   background-color: #fff;
@@ -1147,15 +1147,12 @@ button:checked {
 
 /* Contact Information Section */
 .contact-info {
-  position: absolute;
-  top: 600px;
-  right: 20px;
-  transform: translateY(-50%);
   background-color: #ffffff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 250px; /* Adjust width as needed */
+  margin-bottom: 50px;
 }
 
 .contact-info h3 {
@@ -1172,9 +1169,6 @@ button:checked {
 
 /* Social Links Section */
 .social-links {
-  position: absolute;
-  top: 800px; /* Adjust based on contact info height */
-  right: 20px;
   background-color: #ffffff;
   padding: 20px;
   border-radius: 8px;
@@ -1198,6 +1192,15 @@ button:checked {
 
 .social-links a:hover {
   color: #4b0000; /* Red color for hover */
+}
+
+@media (max-width: 991.98px) {
+  .contact-info,
+  .social-links {
+    position: static;
+    margin-bottom: 20px;
+    width: auto;
+  }
 }
 
 .ticket-form {
