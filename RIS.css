@@ -9,6 +9,20 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.add-form {
+  margin-bottom: 20px; /* Space below the button */
+}
+
+@media (max-width: 576px) {
+  .add-form {
+      width: 100%; /* Full width on small screens */
+      margin-bottom: 10px; /* Adjust spacing for smaller screens */
+  }
+}
+
+
+
+
 .header {
   height: 323px;
   background: radial-gradient(circle at center, #9a0000 0%, #4b0000 100%);
@@ -501,17 +515,6 @@ body {
   font-style: normal;
 }
 
-.add-form {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background: #9a0000;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
 .quiz-container {
   background: #fff;
   padding: 20px;
@@ -679,7 +682,6 @@ button:checked {
 .add-form {
   top: 450px;
   right: 50px;
-  position: absolute;
   background: #9a0000; /* Dark red color */
   color: #fff;
   border: none;
