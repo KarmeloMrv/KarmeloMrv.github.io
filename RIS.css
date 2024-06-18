@@ -466,6 +466,17 @@ body {
   margin-bottom: 20px; /* Space below heading */
   text-align: center; /* Center align heading */
 }
+
+#newsletter form {
+  flex-direction: column; /* Stack items vertically on smaller screens */
+  align-items: center; /* Center align items vertically */
+}
+
+#newsletter input[type="email"] {
+  width: 100%; /* Full width for email input on smaller screens */
+  margin-right: 0; /* Remove right margin on smaller screens */
+  margin-bottom: 10px; /* Space below input */
+}
 }
 .event-image-container {
   width: 100%;
@@ -1751,36 +1762,4 @@ margin-bottom: 5px;
 .review p {
 margin-bottom: 5px;
 color: #6c757d;
-}
-
-/* Basic styling for the featured game section */
-
-
-
-@media (max-width: 1200px) {
-  /* Responsive adjustments for smaller screens */
-  #featured-game .featured-game {
-    flex-direction: column; /* Stack items vertically on smaller screens */
-    text-align: center; /* Center align content */
-  }
-
-  #featured-game img {
-    width: 100%; /* Full width for the image on smaller screens */
-    max-width: none; /* Remove max-width constraint */
-    margin-right: 0; /* Remove margin for stacked layout */
-    margin-bottom: 20px; /* Space between image and text */
-  }
-
-  #featured-game .game-name {
-    font-size: 24px; /* Adjusted font size for game name on smaller screens */
-  }
-
-  #featured-game .article p {
-    font-size: 16px; /* Adjusted font size for article content on smaller screens */
-  }
-  
-  #featured-game h2.featured-game-section {
-    font-size: 36px; /* Adjusted font size for the section heading on smaller screens */
-    margin-bottom: 20px; /* Space below heading */
-  }
 }
