@@ -355,57 +355,84 @@ body {
   }
 
   .navbar-toggle {
-    display: block;
+    display: block !important;
+  }
+
+  .navbar-collapse {
+    display: none !important;
+  }
+
+  .navbar-collapse.show {
+    display: block !important;
   }
 
   .navbar-links {
-      display: none;
-      flex-direction: column;
-      width: 100%;
+    display: none;
+    flex-direction: column;
+    width: 100%;
   }
 
   .navbar-links a {
-      text-align: center;
-      padding: 1rem;
-      width: 100%;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
   }
 
   .navbar-links.show {
-      display: flex;
+    display: flex;
   }
 
   .dropdown-item {
     columns: 1;
   }
 
-  .navbar-brand{
-    margin-right: auto;  /* Align to the left */
+  .navbar-brand {
+    margin-right: auto; /* Align to the left */
   }
 
-    .event,
-    .community-item {
-        flex: 1 1 100%;
-    }
+  .event,
+  .community-item {
+    flex: 1 1 100%;
+  }
 
-    .main-article, .featured-game, .event, .community-item {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
+  .main-article,
+  .featured-game,
+  .event,
+  .community-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .main-article img,
+  .featured-game img,
+  .event img,
+  .community-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .carousel-caption h3,
+  .carousel-caption p {
+    font-size: 1.2rem;
+  }
+
+  .secondary-articles {
+    display: flex;
+    flex-direction: column; /* Ensures articles stack vertically */
+    align-items: center; /* Align items (articles) along the center horizontally */
+  }
   
-    .main-article img,
-    .featured-game img,
-    .event img,
-    .community-item img {
-      max-width: 100%;
-      height: auto;
-    }
-  
-    .carousel-caption h3, .carousel-caption p {
-      font-size: 1.2rem;
-    }
+  .article {
+    margin-bottom: 20px; /* Add space between articles */
+    text-align: center; /* Center-align text within each article */
+    max-width: 300px; /* Example: Set a maximum width for each article */
+    padding: 20px; /* Example: Add padding for better readability */
+    background-color: #f9f9f9; /* Example: Background color for better visibility */
+    border: 1px solid #ddd; /* Example: Border for separation */
+    width: 100% !important;
+  }
 }
-
   .event-image-container {
     width: 100%;
     max-width: 100%;
