@@ -1,4 +1,5 @@
-const questions = [
+document.addEventListener("DOMContentLoaded", function() {
+  const questions = [
     {
       question: "Which setting appeals to you the most?",
       answers: [
@@ -100,87 +101,91 @@ const questions = [
       ]
     }
   ];
-  
-  
-      // Initialize quiz variables
-      let currentQuestion = 0;
-      let totalScore = 0;
-      const quizContainer = document.getElementById('quiz');
-      const submitButton = document.getElementById('submit');
-      const resultsContainer = document.getElementById('results');
-  
-      // Function to display current question
-      function displayQuestion() {
-        const currentQuiz = questions[currentQuestion];
-        const answersHTML = currentQuiz.answers.map(answer =>
-          `<label><input type="radio" name="answer" value="${answer.score}"> ${answer.option}</label><br>`
-        ).join('');
-        quizContainer.innerHTML = `
-          <div class="question">${currentQuiz.question}</div>
-          <div class="answers">${answersHTML}</div>
-        `;
-      }
 
-      function hideQuestion(){
-        quizContainer.innerHTML = '';
-      }
-  
-      // Function to calculate total score and suggest a game
-      function showResults() {
-        const selectedAnswer = document.querySelector('input[name="answer"]:checked');
-        if (!selectedAnswer) {
-          alert('Please select an answer before submitting.');
-          return;
-        }
-        totalScore += parseInt(selectedAnswer.value);
-        currentQuestion++;
-  
-        if (currentQuestion < questions.length) {
-          displayQuestion();
-        } else {
-            hideQuestion();
-          let suggestedGame;
-          let gameLink;
-          if (totalScore <= 10) {
-            suggestedGame = "Far Cry 1";
-            gameLink = "<a href='FarCry1.html'>Far Cry 1 Game Link</a>";
-          } else if (totalScore <= 20) {
-            suggestedGame = "Far Cry 2";
-            gameLink = "<a href='FarCry2.html'>Far Cry 2 Game Link</a>";
-          } else if (totalScore <= 30) {
-            suggestedGame = "Far Cry 3";
-            gameLink = "<a href='FarCry3.html'>Far Cry 3 Game Link</a>";
-          } else if (totalScore <= 40) {
-            suggestedGame = "Far Cry 4";
-            gameLink = "<a href='FarCry4.html'>Far Cry 4 Game Link</a>";
-          } else if (totalScore <= 50) {
-            suggestedGame = "Far Cry 5";
-            gameLink = "<a href='FarCry5.html'>Far Cry 5 Game Link</a>";
-          } else if (totalScore <= 60) {
-            suggestedGame = "Far Cry 6";
-            gameLink = "<a href='FarCry6.html'>Far Cry 6 Game Link</a>";
-          } else if (totalScore <= 70) {
-            suggestedGame = "Far Cry Primal";
-            gameLink = "<a href='FarCryP.html'>Far Cry Primal Game Link</a>";
-          } else if (totalScore <= 80) {
-            suggestedGame = "Far Cry 3: Blood Dragon";
-            gameLink = "<a href='FarCryBD.html'>Far Cry 3: Blood Dragon Game Link</a>";
-          } else {
-            suggestedGame = "Far Cry New Dawn";
-            gameLink = "<a href='FarCryND.html'>Far Cry New Dawn Game Link</a>";
-          }
-          
-          resultsContainer.innerHTML = `
-            <h2>Your suggested Far Cry game: ${suggestedGame}</h2>
-            <p>Based on your preferences, we suggest starting with ${suggestedGame}.</p>
-            <p> Check it out here: ${gameLink}.</p>
-          `;
-          submitButton.style.display = 'none';
-        }
-      }
-  
-      // Event listener for submit button
-      submitButton.addEventListener('click', showResults);
-  
-      // Initial display of the first question
+  let currentQuestion = 0;
+  let totalScore = 0;
+  const quizContainer = document.getElementById('quiz');
+  const submitButton = document.getElementById('submit');
+  const resultsContainer = document.getElementById('results');
+  const progressBar = document.getElementById('progress');
+
+  function displayQuestion() {
+    const currentQuiz = questions[currentQuestion];
+    const answersHTML = currentQuiz.answers.map(answer =>
+      `<label><input type="radio" name="answer" value="${answer.score}"> ${answer.option}</label><br>`
+    ).join('');
+    quizContainer.innerHTML = `
+      <div class="question">${currentQuiz.question}</div>
+      <div class="answers">${answersHTML}</div>
+    `;
+
+    updateProgressBar();
+  }
+
+  function hideQuestion() {
+    quizContainer.innerHTML = '';
+  }
+
+  function showResults() {
+    const selectedAnswer = document.querySelector('input[name="answer"]:checked');
+    if (!selectedAnswer) {
+      alert('Please select an answer before submitting.');
+      return;
+    }
+    totalScore += parseInt(selectedAnswer.value);
+    currentQuestion++;
+
+    if (currentQuestion < questions.length) {
       displayQuestion();
+    } else {
+      hideQuestion();
+      let suggestedGame;
+      let gameLink;
+      if (totalScore <= 10) {
+        suggestedGame = "Far Cry 1";
+        gameLink = "<a href='FarCry1.html'>Far Cry 1 Game Link</a>";
+      } else if (totalScore <= 20) {
+        suggestedGame = "Far Cry 2";
+        gameLink = "<a href='FarCry2.html'>Far Cry 2 Game Link</a>";
+      } else if (totalScore <= 30) {
+        suggestedGame = "Far Cry 3";
+        gameLink = "<a href='FarCry3.html'>Far Cry 3 Game Link</a>";
+      } else if (totalScore <= 40) {
+        suggestedGame = "Far Cry 4";
+        gameLink = "<a href='FarCry4.html'>Far Cry 4 Game Link</a>";
+      } else if (totalScore <= 50) {
+        suggestedGame = "Far Cry 5";
+        gameLink = "<a href='FarCry5.html'>Far Cry 5 Game Link</a>";
+      } else if (totalScore <= 60) {
+        suggestedGame = "Far Cry 6";
+        gameLink = "<a href='FarCry6.html'>Far Cry 6 Game Link</a>";
+      } else if (totalScore <= 70) {
+        suggestedGame = "Far Cry Primal";
+        gameLink = "<a href='FarCryP.html'>Far Cry Primal Game Link</a>";
+      } else if (totalScore <= 80) {
+        suggestedGame = "Far Cry 3: Blood Dragon";
+        gameLink = "<a href='FarCryBD.html'>Far Cry 3: Blood Dragon Game Link</a>";
+      } else {
+        suggestedGame = "Far Cry New Dawn";
+        gameLink = "<a href='FarCryND.html'>Far Cry New Dawn Game Link</a>";
+      }
+      
+      resultsContainer.innerHTML = `
+        <h2>Your suggested Far Cry game: ${suggestedGame}</h2>
+        <p>Based on your preferences, we suggest starting with ${suggestedGame}.</p>
+        <p>Check it out here: ${gameLink}.</p>
+      `;
+      submitButton.style.display = 'none';
+    }
+  }
+
+  function updateProgressBar() {
+    const progressWidth = ((currentQuestion + 1) / questions.length) * 100;
+    progressBar.style.width = progressWidth + '%';
+  }
+
+  submitButton.addEventListener('click', showResults);
+
+  // Initial display of the first question
+  displayQuestion();
+});

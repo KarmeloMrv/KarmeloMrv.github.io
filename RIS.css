@@ -1770,3 +1770,54 @@ margin-bottom: 5px;
 margin-bottom: 5px;
 color: #6c757d;
 }
+
+#quiz-container {
+  width: 80%;
+  max-width: 700px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+#progress-container {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+#progress {
+  height: 20px;
+  background-color: #9a0000;
+  width: 0%;
+}
+
+.question {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+.answers label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.answers input[type="radio"] {
+  margin-right: 10px;
+}
+
+#results {
+  margin-top: 20px;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+a:hover {
+  text-decoration: underline;
+}
